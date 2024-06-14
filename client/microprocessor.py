@@ -3,7 +3,7 @@ import requests
 def create_activity():
     endpoint = 'http://127.0.0.1:8000/activity/create/'
     data = {
-    'robot_id': 2,
+    'robot_id': 1,
     'session_seconds': "5",
     'off_time': "2023-11-01_05-55-11",
     # 'off_time': "2023-11-01_05-59-11",
@@ -47,8 +47,8 @@ def destroy_activity():
     get_response = requests.delete(endpoint)
     print(get_response)
 
-# create_activity()
-get_activity_list()
+create_activity()
+# get_activity_list()
 # get_activity_detail()
 # update_activity()
 # destroy_activity()

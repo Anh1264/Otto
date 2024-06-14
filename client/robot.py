@@ -5,9 +5,9 @@ def create_robot():
     data = {
     # 'robot': Robot.objects.get(id=1),
     # 'session_seconds': "5",
-    'name': "Test6",
+    'name': "Test2",
     'type': "Prototype",
-    'location': 'B1F6',
+    'location': 'B1F2',
     }
     get_response = requests.post(endpoint,json=data)
     print(get_response.json())
@@ -39,8 +39,8 @@ def destroy_robot():
     get_response = requests.delete(endpoint)
     print(get_response)
 
-create_robot()
-# get_robot_list()
+# create_robot()
+get_robot_list()
 # get_robot_detail()
 # update_robot()
 # destroy_robot()

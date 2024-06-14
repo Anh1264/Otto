@@ -12,6 +12,7 @@ class PictureCreateAPIView(generics.GenericAPIView, mixins.CreateModelMixin):
     serializer_class = PictureSerializer
 
     def post(self, request, *args, **kwargs):
+        print(*args, **kwargs)
         try:
             file_name = request.data['file_name']
             file_name_parts = parts_file_name(file_name)
