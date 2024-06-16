@@ -1,0 +1,10 @@
+{
+    "name": "otto",
+    "version": "1.0.0",
+    "scripts": {
+      "vercel-build": "pip install mysqlclient"
+    },
+    "dependencies": {
+      "mysqlclient": "latest"
+    }
+  }
